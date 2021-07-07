@@ -1,0 +1,102 @@
+.cancelar{
+    -fx-border-color: #F92626;
+    -fx-background-color: #e41749;
+    
+    -fx-pref-width: 250px; /*280*/
+    -fx-pref-height: 50px; /*80*/
+}
+
+.cancelar:hover{
+    -fx-background-color : #d85374 ;
+}
+
+.cancelar:pressed{
+    -fx-background-color : #f1404b ;
+}
+
+
+.guardar{
+    /* -fx-background-color: transparent; */
+    -fx-border-color: #0D6ED8;
+    -fx-background-color: #0D6ED8;
+    -fx-pref-width: 250px; /*250*/
+    -fx-pref-height: 50px; /*50*/
+}
+
+.guardar:hover{
+    -fx-background-color : #5699e0 ;
+}
+
+.guardar:pressed{
+    -fx-background-color : #2E94B9;
+}
+
+.salir{
+    /* -fx-background-color: transparent; */
+    -fx-border-color: #0D6ED8;
+    -fx-background-color: #0D6ED8;
+    -fx-pref-width: 250px;  /*280*/
+    -fx-pref-height: 50px;  /*80*/
+}
+
+.salir:hover{
+    -fx-background-color : #79aadf ;
+}
+
+.salir:pressed{
+    -fx-background-color : #2E94B9;
+}
+
+
+
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-cell-size : 20;
+    -fx-background-color:   #2D75E8;
+}
+.table-view .column-header .label{
+
+   -fx-text-fill: white;
+   -fx-font-weight: bold;
+   -fx-alignment: CENTER_LEFT;
+}
+.table-view .cell{
+   -fx-cell-size: 30;
+  -fx-alignment: center-left;
+  -fx-text-fill: #000000;
+  -fx-alignment: CENTER_LEFT;
+}
+
+.table-row-cell:selected {
+    -fx-background-color:  rgb(127, 172, 243);
+ }
+ .table-row-cell:selected .text {
+        -fx-fill : black;
+ 
+ }
+/* scroll bar starts here */
+
+/* The increment and decrement button CSS class of scrollbar */
+.table-view .increment-button ,.table-view .decrement-button {
+    -fx-background-color:transparent;
+	-fx-background-radius: 2em;
+
+}
+
+/* The main scrollbar **track** CSS class  */
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track{
+	-fx-background-color: transparent;
+	-fx-border-color:derive(  #2D75E8,80%);
+	-fx-background-radius: 2em;
+	-fx-border-radius:2em;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color:derive( #2D75E8,90%);
+	-fx-background-insets: 2, 0, 0;
+	-fx-background-radius: 2em;
+
+}

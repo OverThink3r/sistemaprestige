@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane fx:id="myAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1250.0" stylesheets="@../assets/styles-buttons.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.ConsultarGrupoController">
+   <children>
+      <Label layoutX="190.0" layoutY="53.0" prefHeight="99.0" prefWidth="900.0" text="CONSULTAR GRUPO">
+         <font>
+            <Font size="57.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFilter" layoutX="365.0" layoutY="185.0" prefHeight="30.0" prefWidth="847.0" promptText="Escriba los datos a filtrar">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <ChoiceBox fx:id="cbFilter" layoutX="190.0" layoutY="185.0" prefHeight="30.0" prefWidth="175.0" />
+      <TableView fx:id="tablaGrupos" layoutX="68.0" layoutY="226.0" prefHeight="497.0" prefWidth="1144.0">
+        <columns>
+          <TableColumn fx:id="id_grupo" prefWidth="174.0" text="ID_GRUPO" />
+          <TableColumn fx:id="codigo_grupo" prefWidth="462.0" text="CODIGO DEL GRUPO" />
+            <TableColumn fx:id="nombre_grupo" prefWidth="304.0" text="NOMBRE DEL GRUPO" />
+            <TableColumn fx:id="nivel" prefWidth="194.0" text="NIVEL" />
+            <TableColumn fx:id="icono" minWidth="5.0" prefWidth="5.0" />
+        </columns>
+      </TableView>
+      <Button layoutX="500.0" layoutY="733.0" mnemonicParsing="false" onMouseClicked="#salir" prefHeight="66.0" prefWidth="218.0" styleClass="salir" text="SALIR">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Pane cache="true" layoutX="53.0" layoutY="22.0" prefHeight="143.0" prefWidth="1175.0" style="-fx-background-color: GREY; -fx-background-radius: 10;" styleClass="fondo-dog" stylesheets="@../assets/styles.css">
+         <effect>
+            <Blend />
+         </effect>
+         <children>
+            <TextFlow layoutX="29.0" layoutY="75.0" prefHeight="44.0" prefWidth="275.0" style="-fx-background-color: WHITE; -fx-background-radius: 10;">
+               <children>
+                  <Text fill="#01135b" strokeType="OUTSIDE" strokeWidth="0.0" text="Consultar Grupo">
+                     <font>
+                        <Font name="Berlin Sans FB" size="35.0" />
+                     </font>
+                  </Text>
+               </children>
+            </TextFlow>
+         </children>
+      </Pane>
+      <Label layoutX="68.0" layoutY="177.0" text="Filtrar:">
+         <font>
+            <Font name="Berlin Sans FB" size="34.0" />
+         </font>
+      </Label>
+      <Button layoutX="917.0" layoutY="733.0" mnemonicParsing="false" onAction="#generarPdf" style="-fx-background-color: orange;" styleClass="salir" text="Generar Pdf" />
+      <Button layoutX="115.0" layoutY="733.0" mnemonicParsing="false" onAction="#generarExcel" style="-fx-background-color: green;" styleClass="salir" text="Generar Excel" />
+   </children>
+</AnchorPane>

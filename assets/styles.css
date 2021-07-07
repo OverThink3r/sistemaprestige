@@ -1,0 +1,219 @@
+/*.button
+{
+-fx-background-color : transparent;
+-fx-text-fill: white;
+}
+.button:hover
+{
+-fx-background-color : #2c4a77 ;
+
+}
+.button:pressed
+{
+-fx-background-color : #34d1af ;
+}
+*/
+.sidebar-btn
+{
+-fx-background-color : transparent;
+-fx-text-fill: #f2f2f2;
+-fx-pref-width: 12em;
+-fx-pref-height: 4em;
+-fx-graphic-text-gap: 15;
+}
+.active
+{
+-fx-text-fill:  #00ffe1;
+-fx-border-width: 0 0 0 3px;
+-fx-border-color: #00ffe1;
+
+}
+
+
+.sidebar-btn:hover
+{
+-fx-text-fill:  #00ffe1;
+
+}
+
+.active > .sidebar-icon
+{
+-fx-fill:  #00ffe1;
+
+}
+
+.sidebar-btn:hover > .sidebar-icon
+{
+-fx-fill:  #00ffe1;
+
+}
+
+.sidebar-icon{
+    -fx-fill:  #f2f2f2;
+}
+/*OPCIONES DE HOME*/
+
+.btn-options:hover .icon-options{
+    -fx-fill:  #ffffff;
+}
+
+.btn-options:hover{
+    -fx-text-fill:  #ffffff;
+}
+
+/* ---------------------------------------------------- */
+.cancelar{
+    -fx-background-color: transparent;
+    -fx-border-width: 3px;
+    -fx-border-color: #e41749;
+}
+
+.cancelar:hover{
+    -fx-background-color : #e41749 ;
+}
+
+.cancelar:pressed{
+    -fx-background-color : #f1404b ;
+}
+
+/* ---------------------------------------------------- */
+.guardar{
+    -fx-background-color: transparent;
+    -fx-border-color: #0D6ED8;
+}
+
+.guardar:hover{
+    -fx-background-color : #0D6ED8 ;
+}
+
+.guardar:pressed{
+    -fx-background-color : #2E94B9;
+}
+
+
+
+
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-cell-size : 20;
+    -fx-background-color:   #2D75E8;
+}
+.table-view .column-header .label{
+
+   -fx-text-fill: white;
+   -fx-font-weight: bold;
+   -fx-alignment: CENTER_LEFT;
+}
+.table-view .cell{
+   -fx-cell-size: 30;
+  -fx-alignment: center-left;
+  -fx-text-fill: #000000;
+  -fx-alignment: CENTER_LEFT;
+}
+
+.table-row-cell:selected {
+    -fx-background-color:  rgb(127, 172, 243);
+ }
+ .table-row-cell:selected .text {
+        -fx-fill : white ;
+ 
+ }
+/* scroll bar starts here */
+
+/* The increment and decrement button CSS class of scrollbar */
+.table-view .increment-button ,.table-view .decrement-button {
+    -fx-background-color:transparent;
+	-fx-background-radius: 2em;
+
+}
+
+/* The main scrollbar **track** CSS class  */
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track{
+	-fx-background-color: transparent;
+	-fx-border-color:derive(  #2D75E8,80%);
+	-fx-background-radius: 2em;
+	-fx-border-radius:2em;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color:derive( #2D75E8,90%);
+	-fx-background-insets: 2, 0, 0;
+	-fx-background-radius: 2em;
+
+}
+
+/* chart properties */
+
+.chart {
+    -fx-padding: 10px;
+    -fx-background-color: transparent;
+    -fx-legend-visible: false;
+}
+.chart-plot-background {
+    -fx-background-color:transparent;
+}
+
+.chart-pie {
+    -fx-border-color: derive(-fx-pie-color, 1%);
+    -fx-border-width: 0px;
+}
+
+.fondo-home{
+    -fx-background-image: url(./fondos/fondo7.jpg);
+    -fx-background-size: cover;
+    -fx-background-radius: 10px;
+
+}
+
+.fondo-mountain{
+-fx-background-image: url(./fondos/fondo3.jpg);
+    -fx-background-size: cover;
+    -fx-background-radius: 10px;
+}
+
+.fondo-arts{
+    -fx-background-image: url(./fondos/fondo4.jpg);
+    -fx-background-size: cover;
+    -fx-background-radius: 10px;
+}
+
+.fondo-students{
+    -fx-background-image: url(./fondos/fondo5.jpg);
+    -fx-background-size: cover;
+    -fx-background-radius: 10px;
+}
+
+.fondo-city{
+    -fx-background-image: url(./fondos/fondo6.jpg);
+    -fx-background-size: cover;
+    -fx-background-radius: 10px;
+}
+
+.fondo-dog{
+    -fx-background-image: url(./fondos/dog.jpg);
+    -fx-background-size: cover;
+    -fx-background-radius: 10px;
+}
+
+.fondo-sphere{
+    -fx-background-image: url(./fondos/esphera.jpg);
+    -fx-background-size: cover;
+    -fx-background-radius: 10px;
+}
+
+
+.user-home{
+    -fx-background-color: rgba(255,255,255,0.9);
+    -fx-background-radius: 10px;
+}
+
+.user-home-btn:hover{
+    -fx-text-fill:  rgba(0,0,0,0.8);
+}
+
+.user-home-btn:hover .user-home-icon{
+    -fx-fill:  #0b536b;
+}
